@@ -48,10 +48,10 @@ const sampleJSONData = {
   ],
   "education": [
     {
-      "years": "2018-2022",
-      "school": "Baku State University",
-      "degree": "Computer Science",
-      "gpa": "3.8"
+      "years": "2024-2028",
+      "school": "Azerbaijan Technical University",
+      "degree": "Information Security",
+      "gpa": "5.0"
     }
   ],
   "skills": ["JavaScript", "HTML", "CSS", "React"],
