@@ -1,0 +1,41 @@
+{
+  "profilePic": "https://i.pinimg.com/originals/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg",
+  "name": "Irana Mirzazada",
+  "title": "Web Developer",
+  "contact": [
+    "+994501234567",
+    "irana@example.com",
+    "Baku, Azerbaijan",
+    "https://irana-dev.com"
+  ],
+  "education": [
+    {
+      "years": "2018-2022",
+      "school": "Baku State University",
+      "degree": "Computer Science",
+      "gpa": "3.8"
+    }
+  ],
+  "skills": ["JavaScript", "HTML", "CSS", "React"],
+  "languages": ["Azerbaijani", "English", "Russian"],
+  "profile": "Experienced web developer with 3+ years of experience building modern web applications.",
+  "experience": [
+    {
+      "company": "Tech Solutions Inc.",
+      "title": "Frontend Developer",
+      "responsibilities": [
+        "Developed responsive web applications",
+        "Implemented new features",
+        "Fixed bugs and optimized performance"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "John Smith",
+      "position": "Senior Developer",
+      "phone": "+994551112233",
+      "email": "john@example.com"
+    }
+  ]
+}

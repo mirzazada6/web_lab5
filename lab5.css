@@ -1,0 +1,211 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+}
+
+#resume {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#left {
+  width: 35%;
+  background: #4446cc;
+  padding: 30px;
+  color: white;
+}
+
+#right {
+  width: 65%;
+  padding: 30px;
+  background: white;
+  color: #070707;
+}
+
+#profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.upload-btn {
+  background: #673ab7;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  width: 80%;
+  font-size: 12px;
+  transition: background 0.3s;
+}
+
+.upload-btn:hover {
+  background: #5e35b1;
+}
+
+.section-header {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+  margin: 25px 0 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-icon {
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+#left .section-header {
+  border-color: white;
+}
+
+#right .section-header {
+  border-color: #070707;
+}
+
+.text-small {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}
+
+.actions {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+#save-btn {
+  background: #4446cc;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#reset-btn {
+  background: #f44336;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#reset-btn:hover {
+  background: #d32f2f;
+}
+
+#load-json-btn {
+  background: #ff9800;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#load-json-btn:hover {
+  background: #e68a00;
+}
+
+#export-pdf {
+  background: #9c27b0;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#export-pdf:hover {
+  background: #7b1fa2;
+}
+
+.delete-btn {
+  background: #f44336;
+  margin-left: 5px;
+  padding: 2px 5px;
+  font-size: 10px;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
+
+.view-mode {
+  display: block;
+  margin: 5px 0;
+}
+
+.edit-mode {
+  display: none;
+}
+
+.editing .view-mode {
+  display: none;
+}
+
+.editing .edit-mode {
+  display: block;
+}

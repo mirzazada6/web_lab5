@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Irana Mirzazada - Resume</title>
+  <link rel="stylesheet" href="lab4.css" />
+</head>
+<body>
+  <div id="resume">
+    <div id="left">
+      <div class="center">
+        <img id="profile-pic" src="https://i.pinimg.com/originals/04/64/6b/04646bc6ef384e1c564b25df6ef17291.jpg" alt="Profile Picture" />
+        <input type="file" id="image-upload" accept="image/*" style="display: none;">
+        <button onclick="document.getElementById('image-upload').click()" class="upload-btn">Change Profile Picture</button>
+        <div class="form-group">
+          <input type="text" id="name-input" placeholder="Full Name" class="text-small" required>
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <input type="text" id="title-input" placeholder="Job Title" class="text-small" required>
+          <span class="error-message"></span>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <div class="section-header" onclick="toggleSection(this)">Contact <span class="edit-icon" onclick="editSection('contact', event)">✏️</span></div>
+        <div class="dropdown-content" id="contact">
+          <div class="form-group">
+            <input type="tel" id="phone-input" placeholder="Phone" class="text-small" required>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email-input" placeholder="Email" class="text-small" required>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="address-input" placeholder="Address" class="text-small" required>
+            <span class="error-message"></span>
+          </div>
+          <div class="form-group">
+            <input type="url" id="website-input" placeholder="Website" class="text-small" required>
+            <span class="error-message"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <div class="section-header" onclick="toggleSection(this)">Education <span class="edit-icon" onclick="editSection('education', event)">✏️</span></div>
+        <div class="dropdown-content" id="education"></div>
+        <button onclick="addEducation()">Add</button>
+      </div>
+
+      <div class="dropdown">
+        <div class="section-header" onclick="toggleSection(this)">Skills <span class="edit-icon" onclick="editSection('skills', event)">✏️</span></div>
+        <div class="dropdown-content" id="skills"></div>
+        <button onclick="addSkill()">Add</button>
+      </div>
+
+      <div class="dropdown">
+        <div class="section-header" onclick="toggleSection(this)">Languages <span class="edit-icon" onclick="editSection('languages', event)">✏️</span></div>
+        <div class="dropdown-content" id="languages"></div>
+        <button onclick="addLanguage()">Add</button>
+      </div>
+    </div>
+
+    <div id="right">
+      <div class="dropdown">
+        <div class="section-header" onclick="toggleSection(this)">Profile <span class="edit-icon" onclick="editSection('profile', event)">✏️</span></div>
+        <div class="dropdown-content">
+          <div class="form-group">
+            <textarea id="profile-input" placeholder="Professional summary" class="text-small" required maxlength="500"></textarea>
+            <span class="error-message"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <div class="section-header" onclick="toggleSection(this)">Work Experience <span class="edit-icon" onclick="editSection('experience', event)">✏️</span></div>
+        <div class="dropdown-content" id="experience"></div>
+        <button onclick="addExperience()">Add</button>
+      </div>
+
+      <div class="dropdown">
+        <div class="section-header" onclick="toggleSection(this)">References <span class="edit-icon" onclick="editSection('references', event)">✏️</span></div>
+        <div class="dropdown-content" id="references"></div>
+        <button onclick="addReference()">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="load-json-btn" onclick="loadFromJSON()">Load Sample Data</button>
+    <button id="save-btn" onclick="saveData()">Save Resume</button>
+    <button id="reset-btn" onclick="resetData()">Reset All</button>
+    <button id="export-pdf" onclick="exportToPDF()">Export to PDF</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="lab4.js"></script>
+</body>
+</html>
